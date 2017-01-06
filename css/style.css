@@ -636,15 +636,18 @@ a:focus, a:active {
 
 .stick.red {
   background-color: #FF4571;
+  background-image:url('../img/Q.jpg');
 }
 
 .stick.yellow {
   background-color: #FFD145;
+  background-image:url('../img/Shino.jpg');
   background-position: center;
 }
 
 .stick.purple {
   background-color: #8260F6;
+  background-image:url('../img/Joy.jpg');
   background-position: right;
 }
 
