@@ -508,6 +508,9 @@ var game = new Game();
 var animation = new Animation();
 var color = new Color();
 var userAgent = window.navigator.userAgent;
+if( typeof WeixinJSBridge !== "undefined" ) {
+  alert('sorry, this game doesn\'t support wechat because it sucks, please user other browser.');
+}
 
 Animation.generateSmallGlows(20);
 
@@ -521,6 +524,14 @@ $(document).ready(function () {
     if ($(window).height() < 480) {
         $('.play-full-page').css('display', 'block');
     }
+});
+
+$(window).on("orientationchange",function(){
+  if(window.orientation != 0){//landscape
+    var elem = document.getElementsBy
+      $(document).requestFullscreen()
+  }
+
 });
 
 $(document).on('click', '.stick', function () {
