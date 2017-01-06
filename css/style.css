@@ -821,7 +821,7 @@ a:focus, a:active {
 .stop-game .score-container {
   background-color: #4C4660;
   width: 433px;
-  height: 300px;
+  height: 350px;
   border-radius: 38px;
   text-align: center;
 }
