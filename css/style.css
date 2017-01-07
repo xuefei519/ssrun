@@ -147,15 +147,7 @@
   left: -3.5px;
   transition: border-bottom-color 0.4s ease;
 }
-.red .triangle-2:after {
-  border-bottom-color: #fc5c82;
-}
-.yellow .triangle-2:after {
-  border-bottom-color: #fcd45c;
-}
-.purple .triangle-2:after {
-  border-bottom-color: #9174f5;
-}
+
 
 .triangle-3 {
   border-left: 12px solid transparent;
@@ -634,18 +626,18 @@ a:focus, a:active {
   cursor: url(https://greghub.github.io/coloron/public/svg/cursor-tap.svg), pointer;
 }
 
-.stick.red {
+.stick.red, .bar.red {
   background-color: #FF4571;
   background-image:url('../img/cn.jpg');
 }
 
-.stick.yellow {
+.stick.yellow, .stick.yellow {
   background-color: #FFD145;
   background-image:url('../img/ca.jpg');
   background-position: center;
 }
 
-.stick.purple {
+.stick.purple, .stick.purple {
   background-color: #8260F6;
   background-image:url('../img/us.jpg');
   background-position: right;
