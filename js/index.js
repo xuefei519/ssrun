@@ -518,7 +518,8 @@ $(document).ready(function () {
     });
     var isWeixinBrowser = (/micromessenger/i).test(navigator.userAgent);
     if((userAgent.match(/iPad/i) || userAgent.match(/iPhone/i))&&isWeixinBrowser){
-        $(".ui-dialog-titlebar-close").hide();
+        $(".ui-dialog-titlebar-close").remove();
+        $(".ui-dialog-titlebar").remove();
         $( "#dialog" ).dialog("open");
     }
 
