@@ -514,7 +514,7 @@ a:focus, a:active {
 }
 
 .top_wave {
-  background: url(../img/wavetop.svg) repeat-x 0 -1px;
+  background: url(https://raw.githubusercontent.com/xuefei519/ssrun/gh-pages/img/wavetop.svg) repeat-x 0 -1px;
   height: 85px;
   bottom: -50px;
   z-index: 10001;
