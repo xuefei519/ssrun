@@ -114,9 +114,7 @@ var Game = function () {
 
         this.stop(); // stop the game
 
-        if ($(window).width() >480) {
-            window.scrollTo(0,50);
-        }
+
         $('.start-game, .stop-game').css('display', 'none'); // hide all the popups
         $('.nominee').hide();
 
@@ -573,4 +571,11 @@ $(window).on("orientationchange", function () {
         $('.start-game .how-to-play .content').css('height','');
     }
     game.scaleScreenAndRun();
+});
+
+window.addEventListener("load",function() {
+    setTimeout(function(){
+        // This hides the address bar:
+        window.scrollTo(0, 1);
+    }, 0);
 });
