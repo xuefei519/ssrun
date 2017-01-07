@@ -516,6 +516,8 @@ $(document).ready(function () {
 
     if(wechat_detect())
         $(".logo").html('sorry, this game doesn\'t support wechat because it sucks, please use other browser.');
+    else
+        $(".logo").html('???');
 
 
     if ($(window).width() < 480) {
