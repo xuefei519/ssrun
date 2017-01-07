@@ -553,9 +553,9 @@ $(window).resize(function () {
         var ua = navigator.userAgent.toLowerCase();
         if(userAgent.match(/micromessenger/.test(ua))) {
             $(".logo").html('sorry, this game doesn\'t support wechat because it sucks, please user other browser.');
-            return;
         }
-        game.scaleScreenAndRun();
+        else
+            game.scaleScreenAndRun();
     }
 });
 
