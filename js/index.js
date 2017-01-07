@@ -274,11 +274,11 @@ var Game = function () {
     Game.prototype.bounce = function bounce() {
         var _this4 = this;
 
-        this.balltween.to('#ball', this.time / 2, { y: '+=250px', scaleY: 0.7, transformOrigin: "bottom", ease: Power2.easeIn,
+        this.balltween.to('#ball', this.time / 2, { y: '+=270px', scaleY: 0.7, transformOrigin: "bottom", ease: Power2.easeIn,
             onComplete: function onComplete() {
                 _this4.checkColor();
             }
-        }).to('#ball', this.time / 2, { y: '-=250px', scaleY: 1.1, transformOrigin: "bottom", ease: Power2.easeOut,
+        }).to('#ball', this.time / 2, { y: '-=270px', scaleY: 1.1, transformOrigin: "bottom", ease: Power2.easeOut,
             onStart: function onStart() {
                 while (_this4.colors[_this4.pics.indexOf(_this4.prevColor)] == _this4.color) {
                     _this4.color = new Color().getRandomColor();
