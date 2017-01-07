@@ -156,7 +156,7 @@ var Game = function () {
 
         TweenMax.killAll(); // prevent multiple calls on resize
 
-        var height = $(window).height()-50;
+        var height = $(window).height();
         var width = $(window).width();
 
         this.calculateScale();

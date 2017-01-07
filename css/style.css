@@ -495,7 +495,7 @@ a:focus, a:active {
   position: absolute;
   width: 100%;
   left: 0;
-  bottom: 0;
+  bottom: 50px;
 }
 
 .waves div, .mounts div {
@@ -514,9 +514,9 @@ a:focus, a:active {
 }
 
 .top_wave {
-  background: url(https://greghub.github.io/coloron/public/svg/top_wave.png) repeat-x 0 -1px;
-  height: 35px;
-  bottom: 0;
+  background: url(../img/wavetop.svg) repeat-x 0 -1px;
+  height: 85px;
+  bottom: -50px;
   z-index: 10001;
 }
 
@@ -780,6 +780,7 @@ a:focus, a:active {
   height: 200px;
   position: relative;
   display: flex;
+  margin-bottom: 50px;
   justify-content: space-around;
 }
 .start-game .how-to-play .bar {
