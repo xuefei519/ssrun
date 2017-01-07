@@ -566,6 +566,19 @@ $(document).on('click', '.stick', function () {
 $(document).on('click', '.section-2 .content .bar', function () {
     color.changeColor($(this));
 });
+$(document).on('click', '.section-3 .content .bar', function () {
+    color.changeColor($(this));
+    var pics=['Q.jpg','Shino.jpg','Joy.jpg'];
+    if($('.section-3 .content .bar').hasClass('red')){
+        TweenMax.to('.start-game .section-3 .ball-demo', 0, { backgroundImage: 'url(img/'+pics[0]+')' });
+    }
+    if($('.section-3 .content .bar').hasClass('yellow')){
+        TweenMax.to('.start-game .section-3 .ball-demo', 0, { backgroundImage: 'url(img/'+pics[1]+')' });
+    }
+    if($('.section-3 .content .bar').hasClass('purple')){
+        TweenMax.to('.start-game .section-3 .ball-demo', 0, { backgroundImage: 'url(img/'+pics[2]+')' });
+    }
+});
 
 $(document).on('click','.about',function(){
     $(".ui-dialog-titlebar").remove();
