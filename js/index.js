@@ -509,10 +509,10 @@ Animation.generateSmallGlows(20);
 
 $(document).ready(function () {
     if( typeof WeixinJSBridge !== "undefined" ) {
-        $(".logo").text('sorry, this game doesn\'t support wechat because it sucks, please user other browser.');
+        $(".logo").html('sorry, this game doesn\'t support wechat because it sucks, please user other browser.');
     }
     else
-        $(".logo").text('What???');
+        $(".logo").html('What???');
 
     //game.showResult();
     game.scaleScreen();
