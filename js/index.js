@@ -114,6 +114,9 @@ var Game = function () {
 
         this.stop(); // stop the game
 
+        if ($(window).width() >480) {
+            window.scrollTo(0,50);
+        }
         $('.start-game, .stop-game').css('display', 'none'); // hide all the popups
         $('.nominee').hide();
 
@@ -522,6 +525,7 @@ $(document).ready(function () {
         $('.start-game .how-to-play .section-2 .content').css('height','230px');
     }
     else{
+        window.scrollTo(0,50);
         $('.start-game .logo-holder').css('margin-top', '').css('width','')
         $('.start-game .how-to-play h4').css('font-size','');
         $('.start-game .logo-holder .hint').css('font-size','');
