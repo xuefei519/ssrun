@@ -516,7 +516,6 @@ $(document).ready(function () {
     $( "#dialog" ).dialog({
         autoOpen:false,
         modal:true,
-        position: ['center', 'center'],
         dialogClass: 'ui-dialog-osx'
     });
     var isWeixinBrowser = (/micromessenger/i).test(navigator.userAgent);
