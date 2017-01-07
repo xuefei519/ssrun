@@ -55,12 +55,6 @@ var Game = function () {
         this.bounce();
     };
 
-    Game.prototype.generateTweet = function generateTweet() {
-        var top = $(window).height() / 2 - 150;
-        var left = $(window).width() / 2 - 300;
-        window.open("https://twitter.com/intent/tweet?url=http://codepen.io/gregh/full/yVLOyO&amp;text=I scored " + this.score + " points on Coloron! Can you beat my score?&amp;via=greghvns&amp;hashtags=coloron", "TweetWindow", "width=600px,height=300px,top=" + top + ",left=" + left);
-    };
-
     /**
      * The greeting when the game begins
      */
