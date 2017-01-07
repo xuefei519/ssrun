@@ -518,6 +518,12 @@ $(document).ready(function () {
         modal:true,
         dialogClass: 'ui-dialog-osx'
     });
+
+    $( "#about" ).dialog({
+        autoOpen:false,
+        modal:true,
+        dialogClass: 'ui-dialog-osx'
+    });
     var isWeixinBrowser = (/micromessenger/i).test(navigator.userAgent);
     if((userAgent.match(/iPad/i) || userAgent.match(/iPhone/i))&&isWeixinBrowser){
         $(".ui-dialog-titlebar-close").remove();
@@ -560,10 +566,17 @@ $(document).on('click', '.section-2 .content .bar', function () {
     color.changeColor($(this));
 });
 
+$(document).on('click','.about',function(){
+    $(".ui-dialog-titlebar").remove();
+    $( "#about" ).dialog("open");
+})
+
 $(window).resize(function () {
-    if (!userAgent.match(/iPad/i) && !userAgent.match(/iPhone/i)) {
         game.scaleScreenAndRun();
-    }
+    $("#dialog").dialog("option", "position", {my: "center", at: "center", of: window});
+    $("#about").dialog("option", "position", {my: "center", at: "center", of: window});
+
+
 });
 
 $(window).on("orientationchange", function () {
@@ -589,3 +602,6 @@ window.addEventListener("load",function() {
         window.scrollTo(0, 1);
     }, 0);
 });
+function close_about(){
+    $( "#about" ).dialog("close");
+}

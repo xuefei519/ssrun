@@ -970,3 +970,31 @@ a:focus, a:active {
   border-radius: 15px;
   border-width: 15px;
 }
+.about{
+  position: absolute;
+  right:0;
+  margin:8vh 10vw 0 0;
+  width:200px;
+  height:50px;
+  line-height: 50px;
+  text-align: center;
+  border:3px #4C4660 solid;
+  border-radius: 30px;
+  background-color: #FFE345;
+}
+.about span{
+  font-size: 30px;
+  font-weight: bold;
+  color:#4C4660;
+}
+#about img{
+  display: block;
+  margin:15px auto 10px auto;
+}
+#about .hightlight{
+  color:#28D;
+}
+#close{
+  float:right;
+  cursor: pointer;
+}
