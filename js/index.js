@@ -556,7 +556,7 @@ $(document).on('click', '.stick', function () {
     }
 });
 
-$(document).on('click', '.section-2 .bar', function () {
+$(document).on('click', '.section-2 .content .bar', function () {
     color.changeColor($(this));
 });
 
