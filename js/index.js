@@ -514,7 +514,8 @@ $(document).ready(function () {
     //game.start();
     //game.bounce();
 
-    if(wechat_detect())
+    var isWeixinBrowser = (/micromessenger/i).test(navigator.userAgent);
+    if(isWeixinBrowser)
         $(".logo").html('sorry, this game doesn\'t support wechat because it sucks, please use other browser.');
     else
         $(".logo").html('???');
