@@ -550,12 +550,11 @@ $(document).on('click', '.section-2 .bar', function () {
 
 $(window).resize(function () {
     if (!userAgent.match(/iPad/i) && !userAgent.match(/iPhone/i)) {
-        var ua = navigator.userAgent.toLowerCase();
-        if(userAgent.match(/micromessenger/.test(ua))) {
-            $(".logo").html('sorry, this game doesn\'t support wechat because it sucks, please user other browser.');
-        }
-        else
-            game.scaleScreenAndRun();
+        game.scaleScreenAndRun();
+    }
+    var ua = navigator.userAgent.toLowerCase();
+    if(userAgent.match(/micromessenger/.test(ua))) {
+        $(".logo").html('sorry, this game doesn\'t support wechat because it sucks, please use other browser.');
     }
 });
 
