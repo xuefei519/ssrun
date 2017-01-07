@@ -511,6 +511,9 @@ $(document).ready(function () {
     if( typeof WeixinJSBridge !== "undefined" ) {
         $(".logo").text('sorry, this game doesn\'t support wechat because it sucks, please user other browser.');
     }
+    else
+        $(".logo").text('What???');
+
     //game.showResult();
     game.scaleScreen();
     game.intro();
