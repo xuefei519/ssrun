@@ -554,9 +554,3 @@ $(window).resize(function () {
 $(window).on("orientationchange", function () {
     game.scaleScreenAndRun();
 });
-
-function fullScreen(){
-   // document.documentElement.requestFullScreen();
-    document.body.style.height = (window.outerHeight + 50) + 'px';
-    setTimeout( function(){ window.scrollTo(1, 0); }, 0 );
-        }
