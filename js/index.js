@@ -514,6 +514,10 @@ $(document).ready(function () {
     //game.start();
     //game.bounce();
 
+    if(wechat_detect())
+        $(".logo").html('sorry, this game doesn\'t support wechat because it sucks, please use other browser.');
+
+
     if ($(window).width() < 480) {
         $('.start-game .logo-holder').css('margin-top', '500px').css('width','650px')
         $('.start-game .how-to-play h4').css('font-size','35px');
@@ -552,11 +556,6 @@ $(window).resize(function () {
     if (!userAgent.match(/iPad/i) && !userAgent.match(/iPhone/i)) {
         game.scaleScreenAndRun();
     }
-    $(".logo").html(userAgent);
-    var ua = navigator.userAgent.toLowerCase();
-    if(userAgent.match(/micromessenger/.test(ua))) {
-        $(".logo").html('sorry, this game doesn\'t support wechat because it sucks, please use other browser.');
-    }
 });
 
 $(window).on("orientationchange", function () {
@@ -582,3 +581,11 @@ window.addEventListener("load",function() {
         window.scrollTo(0, 1);
     }, 0);
 });
+
+function wechat_detect(){
+    var ua = navigator.userAgent.toLowerCase();
+    if(userAgent.match(/micromessenger/.test(ua)))
+        return true;
+    else
+        return false;
+}
