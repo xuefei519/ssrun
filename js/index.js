@@ -517,8 +517,10 @@ $(document).ready(function () {
         autoOpen:false
     });
     var isWeixinBrowser = (/micromessenger/i).test(navigator.userAgent);
-    if(isWeixinBrowser)
+    if((userAgent.match(/iPad/i) || userAgent.match(/iPhone/i))&&isWeixinBrowser){
+        $(".ui-dialog-titlebar-close").hide();
         $( "#dialog" ).dialog("open");
+    }
 
 
     if ($(window).width() < 480) {
