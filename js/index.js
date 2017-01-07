@@ -513,7 +513,9 @@ $(document).ready(function () {
     game.intro();
     //game.start();
     //game.bounce();
-
+    $( "#dialog" ).dialog({
+        autoOpen:false
+    });
     var isWeixinBrowser = (/micromessenger/i).test(navigator.userAgent);
     if(isWeixinBrowser)
         $( "#dialog" ).dialog();
