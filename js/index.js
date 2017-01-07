@@ -156,7 +156,7 @@ var Game = function () {
 
         TweenMax.killAll(); // prevent multiple calls on resize
 
-        var height = $(window).height();
+        var height = $(window).height()-50;
         var width = $(window).width();
 
         this.calculateScale();
@@ -521,6 +521,12 @@ $(document).ready(function () {
         $('.start-game .logo-holder .hint').css('font-size','45px');
         $('.start-game .how-to-play .content').css('height','170px');
     }
+    else{
+        $('.start-game .logo-holder').css('margin-top', '').css('width','')
+        $('.start-game .how-to-play h4').css('font-size','');
+        $('.start-game .logo-holder .hint').css('font-size','');
+        $('.start-game .how-to-play .content').css('height','');
+    }
 });
 
 
@@ -549,5 +555,17 @@ $(window).resize(function () {
 });
 
 $(window).on("orientationchange", function () {
+    if ($(window).width() < 480) {
+        $('.start-game .logo-holder').css('margin-top', '500px').css('width','650px')
+        $('.start-game .how-to-play h4').css('font-size','35px');
+        $('.start-game .logo-holder .hint').css('font-size','45px');
+        $('.start-game .how-to-play .content').css('height','170px');
+    }
+    else{
+        $('.start-game .logo-holder').css('margin-top', '').css('width','')
+        $('.start-game .how-to-play h4').css('font-size','');
+        $('.start-game .logo-holder .hint').css('font-size','');
+        $('.start-game .how-to-play .content').css('height','');
+    }
     game.scaleScreenAndRun();
 });
