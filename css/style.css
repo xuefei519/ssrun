@@ -787,6 +787,9 @@ a:focus, a:active {
   border-radius: 7px;
   margin-top: auto;
   transition: background-color 0.4s ease;
+  background-size:cover;
+  background-position:right top;
+  background-repeat:no-repeat;
 }
 .start-game .how-to-play .bar.bar-1 {
   height: 180px;
