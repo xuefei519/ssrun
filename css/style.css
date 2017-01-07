@@ -631,13 +631,13 @@ a:focus, a:active {
   background-image:url('../img/cn.jpg');
 }
 
-.stick.yellow, .stick.yellow {
+.stick.yellow, .bar.yellow {
   background-color: #FFD145;
   background-image:url('../img/ca.jpg');
   background-position: center;
 }
 
-.stick.purple, .stick.purple {
+.stick.purple, .bar.purple {
   background-color: #8260F6;
   background-image:url('../img/us.jpg');
   background-position: right;
@@ -786,16 +786,13 @@ a:focus, a:active {
 }
 .start-game .how-to-play .bar.bar-1 {
   height: 180px;
-  background-image: url('../img/cn.jpg');
   background-position:right top;
 }
 .start-game .how-to-play .bar.bar-2 {
   height: 120px;
-  background-image: url('../img/ca.jpg');
 }
 .start-game .how-to-play .bar.bar-3 {
   height: 150px;
-  background-image: url('../img/us.jpg');
 }
 .start-game .how-to-play .section-2 .bar {
   cursor: url(https://greghub.github.io/coloron/public/svg/cursor.svg), pointer;
