@@ -794,7 +794,8 @@ a:focus, a:active {
 .start-game .how-to-play .bar.bar-3 {
   height: 150px;
 }
-.start-game .how-to-play .section-2 .bar {
+.start-game .how-to-play .section-2 .bar,
+.start-game .how-to-play .section-3 .bar {
   cursor: url(https://greghub.github.io/coloron/public/svg/cursor.svg), pointer;
 }
 .start-game .how-to-play .section-2 .content{

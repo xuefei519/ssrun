@@ -569,13 +569,13 @@ $(document).on('click', '.section-2 .content .bar', function () {
 $(document).on('click', '.section-3 .content .bar', function () {
     color.changeColor($(this));
     var pics=['Q.jpg','Shino.jpg','Joy.jpg'];
-    if($('.section-3 .content .bar').hasClass('red')){
+    if($(this).hasClass('red')){
         TweenMax.to('.start-game .section-3 .ball-demo', 0, { backgroundImage: 'url(img/'+pics[0]+')' });
     }
-    if($('.section-3 .content .bar').hasClass('yellow')){
+    if($(this).hasClass('yellow')){
         TweenMax.to('.start-game .section-3 .ball-demo', 0, { backgroundImage: 'url(img/'+pics[1]+')' });
     }
-    if($('.section-3 .content .bar').hasClass('purple')){
+    if($(this).hasClass('purple')){
         TweenMax.to('.start-game .section-3 .ball-demo', 0, { backgroundImage: 'url(img/'+pics[2]+')' });
     }
 });
