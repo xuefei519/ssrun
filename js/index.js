@@ -522,7 +522,8 @@ $(document).ready(function () {
     $( "#about" ).dialog({
         autoOpen:false,
         modal:true,
-        dialogClass: 'ui-dialog-osx'
+        dialogClass: 'ui-dialog-osx',
+        maxheight:300
     });
     var isWeixinBrowser = (/micromessenger/i).test(navigator.userAgent);
     if((userAgent.match(/iPad/i) || userAgent.match(/iPhone/i))&&isWeixinBrowser){
