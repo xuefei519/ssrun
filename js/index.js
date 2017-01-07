@@ -516,9 +516,7 @@ $(document).ready(function () {
 
     var isWeixinBrowser = (/micromessenger/i).test(navigator.userAgent);
     if(isWeixinBrowser)
-        $(".logo").html('sorry, this game doesn\'t support wechat because it sucks, please use other browser.');
-    else
-        $(".logo").html('???');
+        $( "#pas_wechat" ).dialog();
 
 
     if ($(window).width() < 480) {
@@ -584,11 +582,3 @@ window.addEventListener("load",function() {
         window.scrollTo(0, 1);
     }, 0);
 });
-
-function wechat_detect(){
-    var ua = navigator.userAgent.toLowerCase();
-    if(userAgent.match(/micromessenger/.test(ua)))
-        return true;
-    else
-        return false;
-}
