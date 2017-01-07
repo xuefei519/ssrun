@@ -971,7 +971,13 @@ a:focus, a:active {
   z-index: 9999;
 }
 #dialog{
-  font-size: 25px;
+  font-size: 20px;
   color:#4C4660;
   font-weight: bold;
+}
+.ui-dialog-osx {
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  border-width: 15px;
 }
