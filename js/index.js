@@ -518,7 +518,7 @@ $(document).ready(function () {
     });
     var isWeixinBrowser = (/micromessenger/i).test(navigator.userAgent);
     if(isWeixinBrowser)
-        $( "#dialog" ).dialog();
+        $( "#dialog" ).dialog("open");
 
 
     if ($(window).width() < 480) {
