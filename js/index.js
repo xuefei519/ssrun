@@ -516,7 +516,7 @@ $(document).ready(function () {
 
     var isWeixinBrowser = (/micromessenger/i).test(navigator.userAgent);
     if(isWeixinBrowser)
-        $( "#pas_wechat" ).dialog();
+        $( "#dialog" ).dialog();
 
 
     if ($(window).width() < 480) {
