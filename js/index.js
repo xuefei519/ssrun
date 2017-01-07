@@ -107,7 +107,7 @@ var Game = function () {
      */
 
     Game.prototype.showGrade = function showGrade(score) {
-        if (score > 30) return "Chuck Norris?";else if (score > 25) return "You're da man";else if (score > 20) return "Awesome";else if (score > 15) return "Great!";else if (score > 13) return "Nice!";else if (score > 10) return "Good Job!";else if (score > 5) return "Really?";else return "Poor...";
+        if (score > 30) return "三时真爱粉！";else if (score > 25) return "好棒棒！";else if (score > 20) return "Awesome";else if (score > 15) return "Great!";else if (score > 13) return "Nice!";else if (score > 10) return "Good Job!";else if (score > 5) return "Really?";else return "弱...";
     };
 
     Game.prototype.start = function start() {
