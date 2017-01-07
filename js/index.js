@@ -516,8 +516,9 @@ $(document).ready(function () {
     //game.bounce();
 
     if ($(window).width() < 480) {
-        $('.start-game .logo-holder').css('margin-top', '500px');
-        $('.start-game .how-to-play h4').css('font-size','53px')
+        $('.start-game .logo-holder').css('margin-top', '500px').css('width','650px')
+        $('.start-game .how-to-play h4').css('font-size','40px');
+        $('.start-game .logo-holder .hint').css('font-size','45px');
     }
 });
 
