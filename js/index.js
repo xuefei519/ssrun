@@ -557,8 +557,17 @@ $(document).on('click', '.stick', function () {
 });
 
 $(document).on('click', '.section-2 .content .bar', function () {
-    alert('clicked');
     color.changeColor($(this));
+    if ($(this).hasClass('no-effect')) {
+        if ($(this).hasClass('bubble-stick')) {
+            animation.playBubble($(this));
+        } else if ($(this).hasClass('triangle-stick')) {
+            animation.playTriangle($(this));
+        } else if ($(this).hasClass('block-stick')) {
+            animation.playBlock($(this));
+        }
+        $(this).removeClass('no-effect');
+    }
 });
 
 $(window).resize(function () {
