@@ -558,5 +558,5 @@ $(window).on("orientationchange", function () {
 function fullScreen(){
    // document.documentElement.requestFullScreen();
     document.body.style.height = (window.outerHeight + 50) + 'px';
-    setTimeout( function(){ window.scrollTo(0, 1); }, 50 );
+    setTimeout( function(){ window.scrollTo(1, 0); }, 0 );
         }
