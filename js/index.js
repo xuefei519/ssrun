@@ -517,7 +517,7 @@ $(document).ready(function () {
 
     if ($(window).width() < 480) {
         $('.start-game .logo-holder').css('margin-top', '500px');
-        $('.start-game .how-to-play h4').css('font-size','33px')
+        $('.start-game .how-to-play h4').css('font-size','53px')
     }
 });
 
