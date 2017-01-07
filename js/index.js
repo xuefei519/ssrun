@@ -508,12 +508,6 @@ var userAgent = window.navigator.userAgent;
 Animation.generateSmallGlows(20);
 
 $(document).ready(function () {
-    if( typeof WeixinJSBridge !== "undefined" ) {
-        $(".logo").html('sorry, this game doesn\'t support wechat because it sucks, please user other browser.');
-    }
-    else
-        $(".logo").html('What???');
-
     //game.showResult();
     game.scaleScreen();
     game.intro();
@@ -557,6 +551,12 @@ $(document).on('click', '.section-2 .bar', function () {
 $(window).resize(function () {
     if (!userAgent.match(/iPad/i) && !userAgent.match(/iPhone/i)) {
         game.scaleScreenAndRun();
+
+        var ua = navigator.userAgent.toLowerCase();
+        if(userAgent.match(/micromessenger/.test(ua))) {
+            $(".logo").html('sorry, this game doesn\'t support wechat because it sucks, please user other browser.');
+
+        }
     }
 });
 
