@@ -526,13 +526,6 @@ $(document).ready(function () {
     }
 });
 
-$(window).on("orientationchange",function(){
-  if(window.orientation != 0){//landscape
-    var elem = document.getElementsBy
-      $(document).requestFullscreen()
-  }
-
-});
 
 $(document).on('click', '.stick', function () {
     color.changeColor($(this));
@@ -561,3 +554,7 @@ $(window).resize(function () {
 $(window).on("orientationchange", function () {
     game.scaleScreenAndRun();
 });
+
+function fullScreen(){
+    document.documentElement.requestFullScreen();
+}
