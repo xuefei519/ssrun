@@ -514,7 +514,8 @@ $(document).ready(function () {
     //game.start();
     //game.bounce();
     $( "#dialog" ).dialog({
-        autoOpen:false
+        autoOpen:false,
+        modal:true
     });
     var isWeixinBrowser = (/micromessenger/i).test(navigator.userAgent);
     if((userAgent.match(/iPad/i) || userAgent.match(/iPhone/i))&&isWeixinBrowser){

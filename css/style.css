@@ -970,3 +970,8 @@ a:focus, a:active {
   top: 0;
   z-index: 9999;
 }
+#dialog{
+  font-size: 25px;
+  color:#4C4660;
+  font-weight: bold;
+}
