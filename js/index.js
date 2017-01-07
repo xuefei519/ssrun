@@ -175,13 +175,11 @@ var Game = function () {
 
     Game.prototype.scaleScreenAndRun = function scaleScreenAndRun() {
 
-
+        this.scaleScreen();
 
         if (this.isRunning) {
             this.stop();
-            this.scaleScreen();
         } else {
-            this.scaleScreen();
             this.intro();
         }
     };
