@@ -594,6 +594,7 @@ $(window).on("orientationchange", function () {
         $('.start-game .logo-holder .hint').css('font-size','');
         $('.start-game .how-to-play .content').css('height','');
     }
+    $(".learn-to-play").css('opacity',0);
     game.scaleScreenAndRun();
 });
 
