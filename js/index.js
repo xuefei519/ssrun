@@ -519,7 +519,7 @@ $(document).ready(function () {
         $('.start-game .logo-holder').css('margin-top', '500px').css('width','650px')
         $('.start-game .how-to-play h4').css('font-size','35px');
         $('.start-game .logo-holder .hint').css('font-size','45px');
-        $('.start-game .how-to-play .content').css('height','170px');
+        $('.start-game .how-to-play .section-2 .content').css('height','230px');
     }
     else{
         $('.start-game .logo-holder').css('margin-top', '').css('width','')
@@ -559,7 +559,7 @@ $(window).on("orientationchange", function () {
         $('.start-game .logo-holder').css('margin-top', '500px').css('width','650px')
         $('.start-game .how-to-play h4').css('font-size','35px');
         $('.start-game .logo-holder .hint').css('font-size','45px');
-        $('.start-game .how-to-play .content').css('height','170px');
+        $('.start-game .how-to-play .section-2 .content').css('height','230px');
     }
     else{
         $('.start-game .logo-holder').css('margin-top', '').css('width','')

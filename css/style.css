@@ -514,7 +514,7 @@ a:focus, a:active {
 }
 
 .top_wave {
-  background: url(https://raw.githubusercontent.com/xuefei519/ssrun/gh-pages/img/wavetop.svg) repeat-x 0 -1px;
+  background: url(../img/wavetop.svg) repeat-x 0 -1px;
   height: 85px;
   bottom: -50px;
   z-index: 10001;
@@ -807,6 +807,9 @@ a:focus, a:active {
 }
 .start-game .how-to-play .section-2 .bar {
   cursor: url(https://greghub.github.io/coloron/public/svg/cursor.svg), pointer;
+}
+.start-game .how-to-play .section-2 .content{
+  margin-bottom: 0;
 }
 .start-game .how-to-play .section-2 .bar:focus, .start-game .how-to-play .section-2 .bar:active {
   cursor: url(https://greghub.github.io/coloron/public/svg/cursor-tap.svg), pointer;
