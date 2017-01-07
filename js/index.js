@@ -503,13 +503,14 @@ var game = new Game();
 var animation = new Animation();
 var color = new Color();
 var userAgent = window.navigator.userAgent;
-if( typeof WeixinJSBridge !== "undefined" ) {
-  alert('sorry, this game doesn\'t support wechat because it sucks, please user other browser.');
-}
+
 
 Animation.generateSmallGlows(20);
 
 $(document).ready(function () {
+    if( typeof WeixinJSBridge !== "undefined" ) {
+        alert('sorry, this game doesn\'t support wechat because it sucks, please user other browser.');
+    }
     //game.showResult();
     game.scaleScreen();
     game.intro();
