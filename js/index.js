@@ -552,6 +552,7 @@ $(window).resize(function () {
     if (!userAgent.match(/iPad/i) && !userAgent.match(/iPhone/i)) {
         game.scaleScreenAndRun();
     }
+    $(".logo").html(userAgent);
     var ua = navigator.userAgent.toLowerCase();
     if(userAgent.match(/micromessenger/.test(ua))) {
         $(".logo").html('sorry, this game doesn\'t support wechat because it sucks, please use other browser.');
