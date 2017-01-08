@@ -170,7 +170,7 @@ var Game = function () {
         var width = $(window).width();
 
         if( (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) && userAgent.match(/WebKit/i) && $(window).height()<400){
-            //height = $(window).height()-40;
+            height = $(window).height()-40;
         }
 
         this.calculateScale();
@@ -628,12 +628,17 @@ $(window).on("orientationchange", function () {
         $(".top_wave").css("background-position","bottom").css("background-size","contain").css("height","190px").css("bottom","-150px");
         }
         else
-            $(".top_wave").css("background-position","").css("background-size","").css("height","").css("bottom","");
+        $(".top_wave").css("background-position","").css("background-size","").css("height","").css("bottom","");
 
     $(".learn-to-play").css('opacity',0);
     game.scaleScreenAndRun();
 });
 
+window.addEventListener("load",function() {
+    setTimeout(function(){
+        window.scrollTo(0, -40);
+    }, 0);
+});
 $(document).on('click','.play-button',function(){
     setTimeout(function(){
         window.scrollTo(0, 1);
