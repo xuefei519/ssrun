@@ -595,8 +595,8 @@ $(document).on('click','.quit',function(){
 });
 
 $(window).resize(function () {
-    //if((!userAgent.match(/iPad/i) && !userAgent.match(/iPhone/i)) )
-       // game.scaleScreenAndRun();
+    if((!userAgent.match(/iPad/i) && !userAgent.match(/iPhone/i)) )
+        game.scaleScreenAndRun();
     $("#dialog").dialog("option", "position", {my: "center", at: "center", of: window});
     $("#about").dialog("option", "position", {my: "center", at: "center", of: window});
 
