@@ -626,9 +626,9 @@ window.addEventListener("load",function() {
     }, 0);
 });
 $(document).on('click','.play-button',function(){
-    var elem = document.getElementById("container");
-    var requestFullScreen = elem.requestFullscreen || elem.msRequestFullscreen || elem.mozRequestFullScreen || elem.webkitRequestFullscreen;
-    requestFullScreen.call(elem);
+    setTimeout(function(){
+        window.scrollTo(0, 1);
+    }, 0);
 });
 function close_about(){
     $( "#about" ).dialog("close");
