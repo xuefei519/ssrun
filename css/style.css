@@ -1014,7 +1014,7 @@ a:focus, a:active {
 }
 .quit{
   position: fixed;
-  right:120px;
+  right:180px;
   top:40px;
   width:150px;
   height:50px;
