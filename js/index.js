@@ -171,7 +171,7 @@ var Game = function () {
 
         if( (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) && userAgent.match(/WebKit/i) && $(window).height()<400){
             game.agent=userAgent;
-            height = $(window).height()-40;
+            height = $(window).height()-50;
         }
 
         this.calculateScale();
@@ -631,7 +631,7 @@ $(window).on("orientationchange", function () {
 
 window.addEventListener("load",function() {
     setTimeout(function(){
-        window.scrollTo(0, 40);
+        window.scrollTo(0, 1);
     }, 0);
 });
 $(document).on('click','.play-button',function(){
