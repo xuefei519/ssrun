@@ -611,7 +611,6 @@ $(window).on("orientationchange", function () {
         $('.start-game .how-to-play .section-2 .content').css('height','230px');
     }
     else{
-        window.scrollTo(0,1);
         $('.start-game .logo-holder').css('margin-top', '').css('width','')
         $('.start-game .how-to-play h4').css('font-size','');
         $('.start-game .logo-holder .hint').css('font-size','');
@@ -623,9 +622,13 @@ $(window).on("orientationchange", function () {
 
 window.addEventListener("load",function() {
     setTimeout(function(){
-        // This hides the address bar:
         window.scrollTo(0, 1);
     }, 0);
+});
+$(document).on('click','.play-button',function(){
+    var elem = document.getElementById("container");
+    var requestFullScreen = elem.requestFullscreen || elem.msRequestFullscreen || elem.mozRequestFullScreen || elem.webkitRequestFullscreen;
+    requestFullScreen.call(elem);
 });
 function close_about(){
     $( "#about" ).dialog("close");

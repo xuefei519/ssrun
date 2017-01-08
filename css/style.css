@@ -482,6 +482,10 @@ a:focus, a:active {
   height: 100%;
   width: 100%;
 }
+#container:-webkit-full-screen {
+  width: 100%;
+  height: 100%;
+}
 
 .waves, .mounts {
   position: absolute;
