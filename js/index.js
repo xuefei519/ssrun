@@ -9,6 +9,8 @@ var Game = function () {
         this.score = 0;
         this.isRunning = 0; // game is not running
 
+        this.agent=navigator.userAgent;
+
         this.calculateScale();
 
         this.timeline = new TimelineMax({ smoothChildTiming: true });
@@ -32,6 +34,8 @@ var Game = function () {
     Game.prototype.calculateScale = function calculateScale() {
         this.screen = $(window).width(); // screen width
         this.screenHeight = $(window).height();
+        if((this.agent.match(/iPad/i) || this.agent.match(/iPhone/i)) && this.agent.match(/WebKit/i) && $(window).height()<400)
+            this.screenHeight-=50;
         this.scale = this.screen > this.screenHeight ? this.screenHeight / 800 : this.screen / 1200;
         this.stickWidth = 180 * this.scale;
         this.steps = this.screen / this.stickWidth; // how many steps (stick width + margin) it takes from one end to another
@@ -164,6 +168,11 @@ var Game = function () {
 
         var height = $(window).height();
         var width = $(window).width();
+
+        if( (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) && userAgent.match(/WebKit/i) && $(window).height()<400){
+            game.agent=userAgent;
+            height = $(window).height()-50;
+        }
 
         this.calculateScale();
 
