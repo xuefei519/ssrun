@@ -170,6 +170,7 @@ var Game = function () {
         var width = $(window).width();
 
         if( (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) && userAgent.match(/WebKit/i) && $(window).height()<400){
+            game.agent=userAgent;
             height = $(window).height()-40;
         }
 
@@ -624,12 +625,6 @@ $(window).on("orientationchange", function () {
         $('.start-game .logo-holder .hint').css('font-size','');
         $('.start-game .how-to-play .content').css('height','');
     }
-    if( (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) && userAgent.match(/WebKit/i) && $(window).height()<400){
-        $(".top_wave").css("background-position","bottom").css("background-size","contain").css("height","190px").css("bottom","-150px");
-        }
-        else
-        $(".top_wave").css("background-position","").css("background-size","").css("height","").css("bottom","");
-
     $(".learn-to-play").css('opacity',0);
     game.scaleScreenAndRun();
 });
