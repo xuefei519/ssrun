@@ -631,7 +631,7 @@ $(window).on("orientationchange", function () {
 
 window.addEventListener("load",function() {
     setTimeout(function(){
-        window.scrollTo(0, -40);
+        window.scrollTo(0, 40);
     }, 0);
 });
 $(document).on('click','.play-button',function(){
