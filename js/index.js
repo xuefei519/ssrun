@@ -126,6 +126,7 @@ var Game = function () {
         // Clean up the stick and ball holders
         // and generate new ones
         $('#sticks, .scene .ball-holder').html('');
+        $('.quit').show();
         $('#score').text(this.score);
         this.generateSticks();
         this.generateBall();
@@ -147,7 +148,9 @@ var Game = function () {
         this.isRunning = 0;
 
         $('.start-game, .stop-game').css('display', 'none');
+        $(".learn-to-play").css('opacity',0);
         $('#sticks, .scene .ball-holder, #score').html('');
+        $('.quit').hide();
         TweenMax.killAll();
 
         this.showResult();
@@ -583,7 +586,11 @@ $(document).on('click', '.section-3 .content .bar', function () {
 $(document).on('click','.about',function(){
     $(".ui-dialog-titlebar").remove();
     $( "#about" ).dialog("open");
-})
+});
+
+$(document).on('click','.quit',function(){
+    game.stop();
+});
 
 $(window).resize(function () {
     if((!userAgent.match(/iPad/i) && !userAgent.match(/iPhone/i)) )

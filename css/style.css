@@ -1012,3 +1012,20 @@ a:focus, a:active {
   color: #fff;
   text-decoration: underline;
 }
+.quit{
+  position: fixed;
+  right:120px;
+  top:40px;
+  width:150px;
+  height:50px;
+  line-height: 50px;
+  text-align: center;
+  border:3px #fff solid;
+  border-radius: 30px;
+  background-color: #ff5f84;
+}
+.quit a{
+  font-size: 30px;
+  font-weight: bold;
+  color:#fff;
+}
