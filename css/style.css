@@ -511,8 +511,10 @@ a:focus, a:active {
 
 .top_wave {
   background: url(../img/wavetop.svg) repeat-x 0 -1px;
-  height: 85px;
-  bottom: -50px;
+  background-position: bottom;
+  background-size:contain ;
+  height: 190px;
+  bottom: -150px;
   z-index: 10001;
 }
 
