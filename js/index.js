@@ -126,6 +126,7 @@ var Game = function () {
         // Clean up the stick and ball holders
         // and generate new ones
         $('#sticks, .scene .ball-holder').html('');
+        $('.credit').hide();
         $('.quit').show();
         $('#score').text(this.score);
         this.generateSticks();
@@ -151,6 +152,7 @@ var Game = function () {
         $(".learn-to-play").css('opacity',0);
         $('#sticks, .scene .ball-holder, #score').html('');
         $('.quit').hide();
+        $(".credit").show();
         TweenMax.killAll();
 
         this.showResult();
